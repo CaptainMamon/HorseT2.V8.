@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1133246430101466725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1133246430101466726}
+  - component: {fileID: 1133246430101466727}
+  - component: {fileID: 5387366962056079094}
+  m_Layer: 0
+  m_Name: SPAWNCAR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1133246430101466726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133246430101466725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6841266, y: 17.149, z: -4.4388022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1133246430101466727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133246430101466725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3c7edaad3ada34e98f8a3b27126f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_prebabList:
+  - {fileID: 3167728395921880013, guid: 41f3712b941d59045892ad2586694e67, type: 3}
+  - {fileID: 3167728395921880013, guid: 45e988b4b7d585845886afc142dfe948, type: 3}
+  - {fileID: 3167728395921880013, guid: 1bca14276abf5b64f95a6d08a24843fc, type: 3}
+  - {fileID: 3167728395921880013, guid: 21af8bcf33a97394b9eb4883bf007047, type: 3}
+  m_spawnOnStart: 1
+--- !u!114 &5387366962056079094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133246430101466725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641654287f75aa9418514bad59974852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_minRepeatTime: 1
+  m_maxRepeatTime: 4
+  m_currentRepeatTime: 0
+  m_functionToRepeat:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1133246430101466727}
+        m_TargetAssemblyTypeName: DTKPrerfabSpawner, Assembly-CSharp
+        m_MethodName: SpawnerPrefab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_isActive: 1
